@@ -1,0 +1,130 @@
+.game {
+    height: 97vh;
+    width: 100%;
+    background: url("Graphics/wp3906260-snake-game-wallpapers.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+}
+
+.gameover {
+    position: absolute;
+    height: 45vmin;
+    width: 70vmin;
+    top: 27vh;
+    left: 33vw;
+    background: linear-gradient(yellow, rgb(12, 228, 12));
+    /* border-bottom: 5px solid #023f11; */
+    font-size: large;
+    box-shadow: -5px 5px #023f11;
+    /* display: none; */
+    /* display: none; */
+    /* display: flex; */
+    font-size: 40px;
+    text-align: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+#start {
+    position: absolute;
+    font-size: 20px;
+    box-shadow: 0px 4px rgba(109, 108, 108, 0);
+    bottom: 3vh;
+    right: 45vw;
+    border-radius: 1rem;
+    width: 30vmin;
+}
+
+#gameoverid {}
+
+.board {
+    height: 80vmin;
+    width: 150vmin;
+    background: radial-gradient(yellow, #12b778);
+    display: grid;
+    grid-template-columns: repeat(45, 1fr);
+    grid-template-rows: repeat(24, 1fr);
+    /* border-style: groove; */
+    border: 10px ridge #024212;
+}
+
+.score {
+    background-color: yellow;
+    font-size: 20px;
+    border-radius: 1rem;
+    position: absolute;
+    top: 3vh;
+    right: 45vw;
+    width: 30vmin;
+    text-align: center;
+}
+
+.snakebody {
+    background-color: #219c00;
+    /* background: radial-gradient(#000c04, #2aaf06); */
+    /* border: 2px solid rgb(0, 0, 0); */
+    border-radius: 50%;
+    background-size: 100% 80%;
+    /* background-size: 100% 100%; */
+}
+
+
+/* .tail {
+    /* background: url("Graphics/tail_right.png"); */
+
+
+/* background-size: 100% 100%; */
+
+
+/* } */
+
+.head {
+    background: url("Graphics/snakehead.png");
+    /* height: 13px;
+    width: 10px; */
+    /* background-color: green; */
+    background-size: 100% 100%;
+    /* border-radius: 40%; */
+    /* border: 2px solid black; */
+    /* position: relative; */
+    /* display: none; */
+}
+
+
+/* .eye1 {
+    height: 3px;
+    width: 3px;
+    position: absolute;
+    background-color: black;
+    top: 4px;
+    left: 4px;
+} */
+
+.food {
+    background: url("Graphics/apple.png");
+    background-size: 100% 100%;
+    z-index: 100;
+}
+
+@media screen and (max-width:500px) {
+    .gameover {
+        position: absolute;
+        height: 30vmin;
+        width: 50vmin;
+        top: 10vh;
+        left: 19vw;
+        background: linear-gradient(yellow, rgb(12, 228, 12));
+        /* border-bottom: 5px solid #023f11; */
+        font-size: large;
+        box-shadow: -5px 5px #023f11;
+        /* display: none; */
+        /* display: none; */
+        /* display: flex; */
+        font-size: 20px;
+        text-align: center;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+}
